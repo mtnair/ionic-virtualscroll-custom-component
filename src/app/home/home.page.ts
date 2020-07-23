@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  items: string[] = []
 
+  constructor() {
+    for (let i = 0; i < 100; i++) {
+      this.items.push('Item #' + i)
+    }
+  }
 }
